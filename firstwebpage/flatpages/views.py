@@ -1,0 +1,14 @@
+from django.shortcuts import render
+from django.http import HttpResponse
+from django.shortcuts import render
+from django import template
+
+
+def home(request):
+    return render(request, 'templates/index.html')
+    # return HttpResponse(u'Привет, Мир!')
+
+
+def hello(request):
+    return render(request, 'templates/static_handler.html')
+# Create your views here.
